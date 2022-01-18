@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="35dp"
+        android:text="Creneau :" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="35dp"
+        android:text="Nom de la salle :" />
+
+    <TextView
+        android:id="@+id/bloc"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scanner_view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="130dp"
+        android:layout_toEndOf="@+id/textView" />
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:autoFocusButtonColor="@android:color/white"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@android:color/white"
+        app:flashButtonVisible="true"
+        app:frameAspectRatioHeight="1"
+        app:frameAspectRatioWidth="1"
+        app:frameColor="@android:color/white"
+        app:frameCornersRadius="0dp"
+        app:frameCornersSize="50dp"
+        app:frameSize="0.75"
+        app:frameThickness="2dp"
+        app:maskColor="#77000000"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scanner_view"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="35dp"
+        android:text="Nom du bloc :" />
+
+    <TextView
+        android:id="@+id/salle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bloc"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="134dp"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="35dp"
+        android:text="Type de la salle" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/salle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="131dp"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/creneau"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="122dp"
+        android:layout_toEndOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/confirmer"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="22dp"
+        android:text="Confirmer l'occupation" />
+
+</RelativeLayout>
